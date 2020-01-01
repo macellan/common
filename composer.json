@@ -1,40 +1,44 @@
 {
-  "name": "payconn/common",
-  "description": "Payconn payment processing library for PHP",
-  "keywords": [
-    "payconn",
-    "gateway",
-    "payment",
-    "purchase",
-    "3d",
-    "turkey"
-  ],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Murat SAC",
-      "email": "muratsac@mail.com"
-    }
-  ],
-  "type": "library",
-  "require": {
-    "php": ">=7.1",
-    "guzzlehttp/guzzle": "~6.0",
-    "symfony/http-foundation": "^2.1||^3||^4"
-  },
-  "autoload": {
-    "psr-4": {
-      "Payconn\\Common\\": "src/Common"
+    "name": "macellan/common",
+    "description": "Payconn payment processing library for PHP",
+    "keywords": [
+        "payconn",
+        "gateway",
+        "payment",
+        "purchase",
+        "3d",
+        "turkey"
+    ],
+    "license": "MIT",
+    "authors": [{
+            "name": "Murat SAC",
+            "email": "muratsac@mail.com"
+        },
+        {
+            "name": "Mehmet Mert Yildiran",
+            "email": "mehmetmertyildiran@gmail.com",
+            "role": "Maintainer"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/http-foundation": "^2.1||^3||^4"
     },
-    "classmap": ["src/Payconn.php"]
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Payconn\\Tests\\Common\\": "tests/Common"
+    "autoload": {
+        "psr-4": {
+            "Payconn\\Common\\": "src/Common"
+        },
+        "classmap": ["src/Payconn.php"]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Payconn\\Tests\\Common\\": "tests/Common"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3",
+        "phpstan/phpstan": "^0.11.2"
     }
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^7.3",
-    "phpstan/phpstan": "^0.11.2"
-  }
 }
