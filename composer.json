@@ -1,5 +1,5 @@
 {
-    "name": "macellan/common",
+    "name": "macellan/payconn-common",
     "description": "Payconn payment processing library for PHP",
     "keywords": [
         "payconn",
